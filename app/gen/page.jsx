@@ -113,6 +113,7 @@ export default function CustomizeLinks() {
                   <Image
                     src={allowedPlatforms[link.platform]?.icon || gitico}
                     className="absolute left-4"
+                    alt = "Nothing"
                     width={20}
                     height={20}
                   />
@@ -131,6 +132,7 @@ export default function CustomizeLinks() {
                     className="absolute right-4"
                     width={20}
                     height={20}
+                    alt="Nothing"
                   />
                 </div>
               </a>
@@ -174,7 +176,7 @@ export default function CustomizeLinks() {
                       <div ref={provided.innerRef} {...provided.draggableProps} {...provided.dragHandleProps} className="mb-4 p-4 bg-gray-100 rounded-md">
                         <div className="flex justify-between items-center">
                           <div className="flex items-center">
-                            <Image src={dndsvg} className="mr-2" />
+                            <Image alt="Nothing" src={dndsvg} className="mr-2" />
                             <span className="text-lg font-semibold">Link #{index + 1}</span>
                           </div>
                           <button
@@ -202,7 +204,7 @@ export default function CustomizeLinks() {
                               ))}
                             </select>
                             <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center p-2">
-                              <Image src={darrow} />
+                              <Image alt="Nothing" src={darrow} />
                             </div>
                           </div>
                         </div>

@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <header className="text-gray-600 body-font border-[16px] border-gray-50">
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
             <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-              <Image alt="" src={navIcon}/>
+              <Image alt="abc" src={navIcon} priority/>
             </a>
             <nav className="md:ml-auto md:mr-auto flex flex-wrap space-x-8 items-center text-base justify-center">
               <div className="flex flex-row bg-purple-100 items-center p-2 m-1 border rounded-md text-purple-900 instrument-sans-semibold"><Image alt="" src={linksIcon}/><Link href="/gen" className="mr-1 ml-1 hover:text-purple-600">Links </Link></div>
