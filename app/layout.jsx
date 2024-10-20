@@ -26,6 +26,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* MADE BY ADITYA 2K22/SE/009 DTU */}
       <body
         className={`${InstrumentSansBold.variable} ${InstrumentSansRegular.variable} ${InstrumentSansSemiSemibold} antialiased`}
       >
