@@ -4,6 +4,7 @@
 Showcase how your profile appears on mobile and share a preview with the world
 
 ## Demo
+<img width="1552" alt="Screenshot 2024-10-20 at 10 32 24 PM" src="https://github.com/user-attachments/assets/0510f3f2-cedb-4c58-aa48-64e0489b9141">
 
 
 
