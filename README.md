@@ -5,7 +5,6 @@ Showcase how your profile appears on mobile and share a preview with the world
 
 ## Demo
 
-Insert gif or link to demo
 
 
 ## Tech Stack
@@ -18,13 +17,13 @@ Insert gif or link to demo
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/AdityaRaj23/epyc-work.git
 ```
 
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd epyc-work
 ```
 
 Install dependencies
