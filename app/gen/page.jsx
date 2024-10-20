@@ -99,11 +99,12 @@ export default function CustomizeLinks() {
     <div className="flex flex-col md:flex-row p-6 space-y-6 md:space-y-0 md:space-x-6">
       <div className="relative flex-initial p-32 bg-white rounded-lg shadow-md">
         <div className="relative">
-          <Image src={mobileMock} alt="Mobile mockup" className="relative" />
+          <Image src={mobileMock} alt="Mobile mockup" className="relative" priority/>
           <div className="absolute w-28 h-28 top-[64px] left-[32%] bg-gradient-to-r from-purple-500 to-blue-500 rounded-full"></div>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-10 flex flex-col items-center justify-center space-y-4 ">
-            {links.map((link, index) => (
+          {links.map((link, index) => (
               <a
+                key={`link-${index}`} // Assign a unique key to this element
                 href={link.url}
                 className="text-white"
                 target="_blank"
@@ -113,12 +114,11 @@ export default function CustomizeLinks() {
                   <Image
                     src={allowedPlatforms[link.platform]?.icon || gitico}
                     className="absolute left-4"
-                    alt = "Nothing"
+                    alt="Platform Icon"
                     width={20}
                     height={20}
                   />
                   <div
-                    key={index}
                     className={`flex flex-col justify-center instrument-sans-semibold w-[15rem] h-[3rem] rounded-md p-2 -z-10 ${
                       allowedPlatforms[link.platform]?.color || 'bg-black'
                     }`}
@@ -132,11 +132,12 @@ export default function CustomizeLinks() {
                     className="absolute right-4"
                     width={20}
                     height={20}
-                    alt="Nothing"
+                    alt="Arrow"
                   />
                 </div>
               </a>
             ))}
+
           </div>
         </div>
       </div>
@@ -157,7 +158,7 @@ export default function CustomizeLinks() {
         </button>
 
         {links.length === 0 && (
-          <div className="flex flex-col items-center justify-center p-4 border border-dashed rounded-md">
+          <div className="flex flex-col items-center justify-center p-4 border border-dashed rounded-md" >
             <Image src={illEmpty} alt="Empty illustration" />
             <h3 className="text-lg font-medium">Let’s get you started</h3>
             <p className="text-gray-500 text-center">
